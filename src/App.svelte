@@ -11,6 +11,7 @@
     <nav>
         <a href="#/">Home</a>
     </nav>
+    <p>Welcome</p>
     <Router {routes} />
 </main>
 
