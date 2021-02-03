@@ -53,6 +53,7 @@
         margin: auto;
         position: sticky;
         top: 0;
+        padding: 0 16px;
     }
     main {
         max-width: 1100px;
@@ -60,7 +61,8 @@
         display: grid;
         grid-template-columns: 3fr 1fr;
         grid-gap: 8px;
-        padding: 20px;
+        padding: 16px;
+        min-height: 70vh;
     }
 
     footer {
