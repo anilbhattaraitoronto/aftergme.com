@@ -1,5 +1,6 @@
 <header>
-    <h1><a href="#/"><img src="images/aftergmelogo1.png" alt="" /></a></h1>
+    <a href="#/"><img src="images/aftergmelogo1.png" alt="" /></a>
+    <h1><a href="#/">after GME</a></h1>
     <nav>
         <ul>
             <a href="#/" class="home-link">Home</a>
@@ -21,12 +22,25 @@
         margin: auto;
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+    }
+    h1::after {
+        content: "wallstreetbets and future stock trading";
+        display: block;
+        text-align: center;
+        font-size: 0.4em;
+        color: red;
+        font-weight: 300;
+        word-spacing: 5px;
+        letter-spacing: 1px;
     }
     img {
-        width: 50px;
+        width: 60px;
         border: 1px solid rgba(211, 211, 211, 0.336);
-        margin-top: 6px;
     }
     .home-link {
         display: inline-block;
@@ -35,14 +49,15 @@
     span {
         position: relative;
         cursor: pointer;
+        text-align: center;
     }
     .drop-down {
         position: absolute;
         top: 16px;
-        right: 8px;
+        right: 0;
         display: flex;
         flex-direction: column;
-        text-align: right;
+        text-align: center;
         transform: scale(0);
         transition: 250ms all ease-in-out;
         background: lightgray;
@@ -56,5 +71,10 @@
     }
     span:hover > .drop-down {
         transform: scale(1);
+    }
+    @media (max-width: 600px) {
+        h1 {
+            display: none;
+        }
     }
 </style>
