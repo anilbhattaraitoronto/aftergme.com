@@ -27,16 +27,21 @@
     }
     h1 {
         text-align: center;
+        transition: 250ms all ease-in-out;
     }
     h1::after {
-        content: "wallstreetbets and future stock trading";
+        content: "wallstreetbets and future of stock trading";
         display: block;
         text-align: center;
         font-size: 0.4em;
-        color: red;
+        color: green;
         font-weight: 300;
         word-spacing: 5px;
         letter-spacing: 1px;
+        padding: 8px 0;
+        font-style: italic;
+    }
+    h1 > a {
     }
     img {
         width: 60px;

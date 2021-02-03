@@ -38,6 +38,9 @@
     <article>
         <Router {routes} />
     </article>
+    <div class="sidebar">
+        <h2>Sidebar</h2>
+    </div>
 </main>
 <footer>
     <Footer />
@@ -48,14 +51,28 @@
         background: lightgray;
         width: 100%;
         margin: auto;
+        position: sticky;
+        top: 0;
     }
-    main,
+    main {
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 8px;
+        padding: 20px;
+    }
+
     footer {
         max-width: 1100px;
         margin: auto;
-        padding: 0;
     }
     footer {
         text-align: center;
+    }
+    @media (max-width: 600px) {
+        main {
+            grid-template-columns: 1fr;
+        }
     }
 </style>
