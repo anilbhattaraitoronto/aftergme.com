@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="aftergmelogo.svg"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   inkscape:export-ydpi="81.919998"
+   inkscape:export-xdpi="81.919998"
+   inkscape:export-filename="/Users/anilbhattarai/projects/resources/logos/aftergmelogo.png"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 158.75 158.75"
+   height="600"
+   width="600">
+  <defs
+     id="defs2">
+    <rect
+       id="rect847"
+       height="15.132081"
+       width="127.65269"
+       y="133.47272"
+       x="6.2080333" />
+    <rect
+       id="rect841"
+       height="45.784246"
+       width="72.55639"
+       y="62.468336"
+       x="84.196452" />
+    <rect
+       id="rect835"
+       height="65.960354"
+       width="122.22066"
+       y="0"
+       x="0" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:window-height="984"
+     inkscape:window-width="1631"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="442.68283"
+     inkscape:cx="400"
+     inkscape:zoom="0.68191214"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <text
+       transform="matrix(4.7046519,0,0,7.6905844,-1.3975309,-12.230538)"
+       y="0"
+       x="-11.363612"
+       style="font-weight:900;font-size:10.58329999999999949px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Black Normal';text-align:start;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect835);fill:#256e25;fill-opacity:1"
+       id="text833"
+       xml:space="preserve"><tspan
+         x="0"
+         y="9.532954"><tspan
+           style="text-align:start;text-anchor:start;fill:#256e25;fill-opacity:1">after</tspan></tspan></text>
+    <text
+       transform="matrix(4.1226874,-1.0924518,2.2536439,6.9899407,-547.34674,-252.49221)"
+       style="font-weight:900;font-size:10.58329999999999949px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Black Normal';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect841);fill:#ff1800;fill-opacity:1"
+       id="text839"
+       xml:space="preserve"><tspan
+         x="108.41337"
+         y="72.001704"><tspan
+           style="fill:#ff1800;fill-opacity:1">GME</tspan></tspan></text>
+    <text
+       transform="matrix(2.3108779,0,0,1.6250425,-82.101649,-86.15617)"
+       style="font-weight:900;font-size:10.58329999999999949px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Black Normal';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect847)"
+       id="text845"
+       xml:space="preserve"><tspan
+         x="35.31904"
+         y="143.00561"><tspan>aftergme.com</tspan></tspan></text>
+  </g>
+</svg>

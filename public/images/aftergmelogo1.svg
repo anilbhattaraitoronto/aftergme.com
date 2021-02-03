@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="aftergmelogo1.svg"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   inkscape:export-ydpi="81.919998"
+   inkscape:export-xdpi="81.919998"
+   inkscape:export-filename="/Users/anilbhattarai/projects/resources/logos/aftergmelogo1.png"
+   id="svg875"
+   version="1.1"
+   viewBox="0 0 211.66666 211.66667"
+   height="800"
+   width="800">
+  <defs
+     id="defs869">
+    <rect
+       id="rect1454"
+       height="22.504121"
+       width="174.60094"
+       y="171.49692"
+       x="14.356077" />
+    <rect
+       id="rect1448"
+       height="41.904225"
+       width="92.732498"
+       y="51.216275"
+       x="48.500261" />
+    <rect
+       id="rect1442"
+       height="15.520083"
+       width="36.472196"
+       y="9.31205"
+       x="6.9840375" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:window-height="984"
+     inkscape:window-width="1390"
+     units="px"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="384.02425"
+     inkscape:cx="400"
+     inkscape:zoom="0.64211886"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata872">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <rect
+       sodipodi:insensitive="true"
+       y="2.9983437"
+       x="1.6931729"
+       height="207.58112"
+       width="208.35712"
+       id="rect1438"
+       style="opacity:1;fill:#ffffff;fill-rule:evenodd;stroke:#d4c0c0;stroke-width:0.264583;paint-order:stroke fill markers" />
+    <text
+       sodipodi:insensitive="true"
+       transform="matrix(3.1852324,0,0,5.2125902,-35.889617,-46.401288)"
+       style="font-weight:900;font-size:10.58329999999999949px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Black Normal';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1442);fill:#008000"
+       id="text1440"
+       xml:space="preserve"><tspan
+         x="13.738236"
+         y="18.845454"><tspan
+           style="fill:#008000">after</tspan></tspan></text>
+    <text
+       sodipodi:insensitive="true"
+       transform="matrix(4.8712612,-3.1633828,5.9124856,9.1045768,-692.7261,-118.02195)"
+       style="font-weight:900;font-size:10.58329999999999949px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Black Normal';text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1448);fill:#ff0000"
+       id="text1446"
+       xml:space="preserve"><tspan
+         x="79.859423"
+         y="60.749751"><tspan
+           style="fill:#ff0000">$GME</tspan></tspan></text>
+    <text
+       sodipodi:insensitive="true"
+       transform="matrix(2.8953819,0,0,2.28915,-189.28445,-214.44491)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58329999999999949px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1454)"
+       id="text1452"
+       xml:space="preserve"><tspan
+         x="69.286236"
+         y="181.02905"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">aftergme.com</tspan></tspan></text>
+  </g>
+</svg>
