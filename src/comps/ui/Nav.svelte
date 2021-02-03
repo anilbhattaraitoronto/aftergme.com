@@ -1,5 +1,5 @@
 <header>
-    <h1><img src="images/aftergmelogo1.png" alt="" /></h1>
+    <h1><a href="#/"><img src="images/aftergmelogo1.png" alt="" /></a></h1>
     <nav>
         <ul>
             <a href="#/" class="home-link">Home</a>
@@ -24,8 +24,9 @@
         align-items: baseline;
     }
     img {
-        width: 60px;
+        width: 50px;
         border: 1px solid rgba(211, 211, 211, 0.336);
+        margin-top: 6px;
     }
     .home-link {
         display: inline-block;
@@ -44,9 +45,14 @@
         text-align: right;
         transform: scale(0);
         transition: 250ms all ease-in-out;
+        background: lightgray;
+        z-index: 20;
+        width: 150px;
+        margin: auto;
+        text-align: center;
     }
     .drop-down > a {
-        padding: 16px 0;
+        padding: 16px;
     }
     span:hover > .drop-down {
         transform: scale(1);

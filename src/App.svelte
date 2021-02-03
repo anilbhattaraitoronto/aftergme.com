@@ -18,8 +18,8 @@
         "/": Home,
         "/posts/postlist": PostList,
         "/posts/featured": FeaturedPosts,
-        "/postdetail/:slug/:id": PostDetail,
-        "/categoryposts/:category": CategoryPosts,
+        "/posts/postdetail/:slug/:id": PostDetail,
+        "/posts/categoryposts/:category": CategoryPosts,
         "/posts/addpost": AddPost,
         "/auth/signup": Signup,
         "/auth/login": Login,
@@ -28,13 +28,20 @@
     };
 </script>
 
+<svelte:head>
+    <title>$ Welcome:: afterGME</title>
+</svelte:head>
 <header>
     <Nav />
 </header>
 <main>
-    <Router {routes} />
-    <Footer />
+    <article>
+        <Router {routes} />
+    </article>
 </main>
+<footer>
+    <Footer />
+</footer>
 
 <style>
     header {
@@ -42,9 +49,13 @@
         width: 100%;
         margin: auto;
     }
-    main {
+    main,
+    footer {
         max-width: 1100px;
         margin: auto;
         padding: 0;
+    }
+    footer {
+        text-align: center;
     }
 </style>
