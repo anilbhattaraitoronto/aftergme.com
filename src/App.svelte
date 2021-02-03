@@ -48,31 +48,35 @@
 
 <style>
     header {
-        background: lightgray;
+        background: rgb(254, 254, 254);
         width: 100%;
         margin: auto;
         position: sticky;
         top: 0;
         padding: 0 16px;
+        box-shadow: 0 1px 0 lightgray;
     }
     main {
         max-width: 1100px;
         margin: auto;
         display: grid;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 5fr 2fr;
         grid-gap: 8px;
         padding: 16px;
         min-height: 70vh;
+    }
+    article,
+    .sidebar {
+        padding: 20px;
+        box-shadow: 1px -1px 0 rgb(238, 236, 236);
     }
 
     footer {
         max-width: 1100px;
         margin: auto;
-    }
-    footer {
         text-align: center;
     }
-    @media (max-width: 600px) {
+    @media (max-width: 750px) {
         main {
             grid-template-columns: 1fr;
         }

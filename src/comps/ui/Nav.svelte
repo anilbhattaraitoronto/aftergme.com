@@ -1,6 +1,6 @@
 <header>
     <a href="#/"><img src="images/aftergmelogo1.png" alt="" /></a>
-    <h1><a href="#/">after GME</a></h1>
+    <h1><a href="#/">after-GME</a></h1>
     <nav>
         <ul>
             <a href="#/" class="home-link">Home</a>
@@ -55,17 +55,19 @@
         position: relative;
         cursor: pointer;
         text-align: center;
+        color: rgb(11, 56, 100);
     }
     .drop-down {
         position: absolute;
-        top: 16px;
+        top: 20px;
         right: 0;
         display: flex;
         flex-direction: column;
         text-align: center;
         transform: scale(0);
         transition: 250ms all ease-in-out;
-        background: lightgray;
+        background: rgb(254, 254, 254);
+        box-shadow: 1px 1px 0 lightgray;
         z-index: 20;
         width: 150px;
         margin: auto;
