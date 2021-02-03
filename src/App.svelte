@@ -8,6 +8,9 @@
 </script>
 
 <main>
+    <nav>
+        <a href="#/">Home</a>
+    </nav>
     <Router {routes} />
 </main>
 
