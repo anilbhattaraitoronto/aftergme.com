@@ -5,7 +5,6 @@
 
     let password = "";
     let confirmPassword = "";
-    console.log(JSON.parse($user).accessToken);
     async function changePassword() {
         await fetch(
             "https://meroapi.merohouse.com/api/auth/aftergme/changepassword",

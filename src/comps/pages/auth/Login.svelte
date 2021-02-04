@@ -47,4 +47,9 @@
         <input type="submit" value="Login" />
     </form>
     <p>No account yet? Please <a href="#/auth/signup">Create Account</a></p>
+    <p>
+        Forgot your password? Please <a href="#/auth/forgetpassword"
+            >Request password reset link</a
+        >.
+    </p>
 {/if}
