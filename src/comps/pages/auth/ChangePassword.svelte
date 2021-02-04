@@ -5,8 +5,8 @@
 
     let password = "";
     let confirmPassword = "";
-    async function changePassword() {
-        await fetch(
+    function changePassword() {
+        fetch(
             "https://meroapi.merohouse.com/api/auth/aftergme/changepassword",
             {
                 method: "POST",
@@ -30,6 +30,28 @@
 
             .catch((err) => console.log("Error is: ", err));
     }
+
+    //delete user
+
+    function deleteUser() {
+        fetch("https://meroapi.merohouse.com/api/auth/aftergme/deleteuser", {
+            method: "DELETE",
+            mode: "cors",
+            headers: {
+                "Content-Type": "application/json",
+                "x-access-token": $user.accessToken,
+            },
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                if (data.success) {
+                    localStorage.removeItem("user");
+                    $user = null;
+                    push("/");
+                }
+            })
+            .catch((err) => console.log("Error is: ", err));
+    }
 </script>
 
 <svelte:head>
@@ -48,4 +70,31 @@
         />
         <input type="submit" value="Change Password" />
     </form>
+    <details>
+        <summary>Do you want to remove your account?</summary>
+        <p><button on:click|preventDefault={deleteUser}>Yes</button></p>
+    </details>
 {/if}
+
+<style>
+    details {
+        line-height: 2;
+        cursor: pointer;
+        margin: 20px auto;
+        text-align: center;
+    }
+    button {
+        display: inline-block;
+        margin-top: 20px;
+        width: 150px;
+        cursor: pointer;
+        color: red;
+        font-weight: bolder;
+        background: white;
+        transition: 200ms all ease-in-out;
+    }
+    button:hover {
+        background: red;
+        color: white;
+    }
+</style>
