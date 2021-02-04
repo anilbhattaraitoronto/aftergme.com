@@ -20,3 +20,11 @@
     Everone who is directly involved in stock trading no longer can ignore
     wallstreetbets as a force to recokn with.
 </p>
+
+<style>
+    img {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+</style>
