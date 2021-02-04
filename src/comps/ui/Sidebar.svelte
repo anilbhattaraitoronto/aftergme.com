@@ -19,7 +19,6 @@
 <style>
     div {
         border-bottom: 1px solid lightgray;
-        padding-bottom: 16px;
     }
     li {
         list-style-type: none;

@@ -50,9 +50,9 @@
         <Router {routes} />
     </article>
     <div class="sidebar">
-        <article>
+        <div>
             <Sidebar {latestTitles} />
-        </article>
+        </div>
     </div>
 </main>
 <footer>
