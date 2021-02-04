@@ -1,3 +1,8 @@
+<script>
+    import { user } from "../../stores/authStore.js";
+    import { push } from "svelte-spa-router";
+</script>
+
 <header>
     <a href="#/"><img src="images/aftergmelogo1.png" alt="" /></a>
     <h1><a href="#/">after-GME</a></h1>
@@ -7,8 +12,19 @@
             <span
                 >Account &#128315;
                 <div class="drop-down">
-                    <a href="#/auth/login">Login</a>
-                    <a href="#/auth/changepassword">Change Password</a>
+                    {#if !$user}
+                        <a href="#/auth/signup">Create Account</a>
+                        <a href="#/auth/login">Login</a>
+                    {:else}
+                        <a href="#/auth/changepassword">Change Password</a>
+                        <span
+                            on:click={() => {
+                                localStorage.removeItem("user");
+                                $user = null;
+                                push("/");
+                            }}>Logout</span
+                        >
+                    {/if}
                     <a href="#/posts/addpost">Add Post</a>
                 </div>
             </span>

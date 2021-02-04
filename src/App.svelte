@@ -1,5 +1,7 @@
 <script>
+    import { onMount } from "svelte";
     import Router from "svelte-spa-router";
+
     import Home from "./comps/Home.svelte";
 
     import PostList from "./comps/pages/posts/PostList.svelte";
@@ -16,6 +18,21 @@
     import Sidebar from "./comps/ui/Sidebar.svelte";
     import Contact from "./comps/ui/Contact.svelte";
     import Footer from "./comps/ui/Footer.svelte";
+
+    //fetch data
+    onMount(() => {
+        Promise.all([
+            fetch(
+                "https://meroapi.merohouse.com/api/events/latest"
+            ).then((value) => value.json()),
+            fetch(
+                "https://meroapi.merohouse.com/api/posts/aftergme/latest"
+            ).then((value) => value.json()),
+        ])
+            .then((data) => console.log(data))
+
+            .catch((err) => console.log("Error is: ", err));
+    });
 
     const routes = {
         "/": Home,
