@@ -21,8 +21,8 @@
                     console.log(data.message);
                     $message = data.message;
                 } else {
-                    $user = data;
                     localStorage.setItem("user", JSON.stringify(data));
+                    $user = localStorage.getItem("user");
                     $message = "You have successfully logged in.";
                     push("/");
                 }
