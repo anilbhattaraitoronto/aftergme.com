@@ -13,7 +13,7 @@
                 mode: "cors",
                 headers: {
                     "Content-Type": "application/json",
-                    "x-access-token": JSON.parse($user).accessToken,
+                    "x-access-token": $user.accessToken,
                 },
                 body: JSON.stringify({ password, confirmPassword }),
             }

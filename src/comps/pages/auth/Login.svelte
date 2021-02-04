@@ -22,7 +22,7 @@
                     $message = data.message;
                 } else {
                     localStorage.setItem("user", JSON.stringify(data));
-                    $user = localStorage.getItem("user");
+                    $user = data;
                     $message = "You have successfully logged in.";
                     push("/");
                 }
