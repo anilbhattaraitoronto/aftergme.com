@@ -14,6 +14,7 @@
     //UI components
     import Nav from "./comps/ui/Nav.svelte";
     import Sidebar from "./comps/ui/Sidebar.svelte";
+    import Contact from "./comps/ui/Contact.svelte";
     import Footer from "./comps/ui/Footer.svelte";
 
     const routes = {
@@ -52,6 +53,7 @@
     <div class="sidebar">
         <div>
             <Sidebar {latestTitles} />
+            <Contact />
         </div>
     </div>
 </main>
