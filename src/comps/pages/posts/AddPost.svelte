@@ -3,6 +3,9 @@
     let active = false;
 
     let content = "";
+    let selectedSize;
+    let selectedHeader;
+    let selectedFont;
 </script>
 
 <svelte:head>
@@ -13,6 +16,33 @@
 <h2>Add Post</h2>
 
 <div class="tool-bar">
+    <select
+        bind:value={selectedHeader}
+        on:change={() => {
+            document.execCommand("heading", false, selectedHeader);
+        }}
+    >
+        <option value="H1" selected>h1</option>
+        <option value="H2">h2</option>
+        <option value="H3">h3</option>
+        <option value="H4">h4</option>
+        <option value="H5">h5</option>
+        <option value="H6">h6</option>
+    </select>
+    <select
+        bind:value={selectedSize}
+        on:change={() => {
+            document.execCommand("fontSize", false, selectedSize);
+        }}
+    >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7" selected>7</option>
+    </select>
     <button
         on:click={(e) => {
             document.execCommand("bold");
