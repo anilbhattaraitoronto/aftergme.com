@@ -21,9 +21,9 @@
 <style>
     [contenteditable] {
         border: 1px solid lightgray;
-        height: 450px;
+        min-height: 450px;
         width: 100%;
-        margin: auto;
+        margin: 60px auto 20px auto;
         padding: 60px 20px 16px 16px;
     }
 </style>
