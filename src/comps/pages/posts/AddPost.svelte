@@ -2,12 +2,7 @@
     let showingSourceCode = false;
     let active = false;
 
-    function toggleSource() {
-        showingSourceCode
-            ? (showingSourceCode = false)
-            : (showingSourceCode = true);
-        console.log(showingSourceCode);
-    }
+    let content = "";
 </script>
 
 <svelte:head>
@@ -17,17 +12,7 @@
 
 <h2>Add Post</h2>
 
-<div
-    class="tool-bar"
-    on:click={(e) => {
-        active == false ? (active = true) : (active = false);
-        if (active) {
-            e.target.classList.add("active-tool");
-        } else {
-            e.target.classList.remove("active-tool");
-        }
-    }}
->
+<div class="tool-bar">
     <button
         on:click={(e) => {
             document.execCommand("bold");
@@ -39,7 +24,6 @@
     <button
         on:click={(e) => {
             document.execCommand("italic");
-            console.log(e.target);
         }}
         title="italic"
     >
@@ -102,7 +86,7 @@
         title="Insert Ordered List"><i class="fa fa-list-ol" /></button
     >
     <button
-        on:click={() => document.execCommand("formatblock", "p")}
+        on:click={() => document.execCommand("formatBlock", false, "p")}
         title="Paragraph"><i class="fa fa-paragraph" /></button
     >
     <button
@@ -113,6 +97,7 @@
         on:click={() =>
             document.execCommand(
                 "createLink",
+                false,
                 prompt("Enter a URL ", "https://")
             )}
         title="Add Link"><i class="fa fa-link" /></button
@@ -120,8 +105,21 @@
     <button on:click={() => document.execCommand("unlink")} title="Remove Link"
         ><i class="fa fa-unlink" /></button
     >
+    <button
+        on:click={() =>
+            document.execCommand(
+                "insertImage",
+                false,
+                prompt("Enter the image url: ", "https://")
+            )}
+        title="image"><i class="fa fa-file-image-o" /></button
+    >
 </div>
-<div contenteditable="true" id="editor" />
+<div contenteditable="true" id="editor" bind:innerHTML={content} />
+
+<p>
+    {@html content}
+</p>
 
 <style>
     [contenteditable] {
@@ -137,5 +135,16 @@
     :global(button.active-tool) {
         background: black;
         color: white;
+    }
+    p {
+        padding: 8px 0;
+    }
+    :global(blockquote) {
+        padding-left: 40px;
+    }
+    :global(img) {
+        display: block;
+        max-width: 450px;
+        margin: auto;
     }
 </style>
