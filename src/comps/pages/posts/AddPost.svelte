@@ -4,7 +4,7 @@
 
     let content = "";
     let selectedSize;
-    let selectedHeader;
+    let selectedHeading;
     let selectedFont;
 </script>
 
@@ -17,9 +17,9 @@
 
 <div class="tool-bar">
     <select
-        bind:value={selectedHeader}
+        bind:value={selectedHeading}
         on:change={() => {
-            document.execCommand("heading", false, selectedHeader);
+            document.execCommand("heading", false, selectedHeading);
         }}
     >
         <option value="H1" selected>h1</option>
