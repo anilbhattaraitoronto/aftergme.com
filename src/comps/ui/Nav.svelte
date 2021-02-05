@@ -25,9 +25,8 @@
                             }}>Logout</span
                         >
                     {/if}
-                    {#if $user && $user.admin_status === 1}
-                        <a href="#/posts/addpost">Add Post</a>
-                    {/if}
+
+                    <a href="#/posts/addpost">Add Post</a>
                 </div>
             </span>
         </ul>
