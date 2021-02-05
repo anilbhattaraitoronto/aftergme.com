@@ -52,7 +52,7 @@
             id: 1,
             slug: "new-title",
             title: "New title",
-            postedDate: new Date(),
+            postedDate: new Date().toDateString(),
         },
     ];
 </script>
@@ -99,7 +99,7 @@
     }
     article,
     .sidebar {
-        padding: 20px;
+        padding: 8px;
         box-shadow: 1px -1px 0 rgb(238, 236, 236);
     }
 
@@ -111,6 +111,7 @@
     @media (max-width: 750px) {
         main {
             grid-template-columns: 1fr;
+            padding: 4px;
         }
     }
 </style>
