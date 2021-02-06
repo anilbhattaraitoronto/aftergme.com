@@ -4,7 +4,6 @@
         return val.replace(/ /g, "-").toLowerCase();
     }
 
-    console.log($user.accessToken);
     //post items
     let language;
     let imageurl;
@@ -17,8 +16,6 @@
     //toolbars
     let selectedSize;
     let selectedHeading;
-
-    console.log("slug is", slug);
 
     function addPost() {
         fetch("https://meroapi.merohouse.com/api/posts/aftergme/addpost", {
